@@ -79,3 +79,40 @@ extension Ume {
 		UserDefaults.standard.url(forKey: defaultName.rawValue)
 	}
 }
+
+// MARK: - set
+
+extension Ume {
+	/**
+	-setObject:forKey: immediately stores a value (or removes the value if nil is passed as the value) for the provided key in the search list entry for the receiver's suite name in the current user and any host, then asynchronously stores the value persistently, where it is made available to other processes.
+	*/
+	public static func set<T: RawRepresentable>(_ value: Any?, forKey defaultName: T) where T.RawValue == String {
+		UserDefaults.standard.set(value, forKey: defaultName.rawValue)
+	}
+	
+	/// -setInteger:forKey: is equivalent to -setObject:forKey: except that the value is converted from an NSInteger to an NSNumber.
+	public static func set<T: RawRepresentable>(_ value: Int, forKey defaultName: T) where T.RawValue == String {
+		UserDefaults.standard.set(value, forKey: defaultName.rawValue)
+	}
+	
+	/// -setFloat:forKey: is equivalent to -setObject:forKey: except that the value is converted from a float to an NSNumber.
+	public static func set<T: RawRepresentable>(_ value: Float, forKey defaultName: T) where T.RawValue == String {
+		UserDefaults.standard.set(value, forKey: defaultName.rawValue)
+	}
+	
+	/// -setDouble:forKey: is equivalent to -setObject:forKey: except that the value is converted from a double to an NSNumber.
+	public static func set<T: RawRepresentable>(_ value: Double, forKey defaultName: T) where T.RawValue == String {
+		UserDefaults.standard.set(value, forKey: defaultName.rawValue)
+	}
+	
+	/// -setBool:forKey: is equivalent to -setObject:forKey: except that the value is converted from a BOOL to an NSNumber.
+	public static func set<T: RawRepresentable>(_ value: Bool, forKey defaultName: T) where T.RawValue == String {
+		UserDefaults.standard.set(value, forKey: defaultName.rawValue)
+	}
+	
+	/// -setURL:forKey is equivalent to -setObject:forKey: except that the value is archived to an NSData. Use -URLForKey: to retrieve values set this way.
+	@available(iOS 4.0, *)
+	public static func set<T: RawRepresentable>(_ url: URL?, forKey defaultName: T) where T.RawValue == String {
+		UserDefaults.standard.set(url, forKey: defaultName.rawValue)
+	}
+}
