@@ -9,7 +9,7 @@
 import Foundation
 
 extension UserDefaults {
-	open class var ume: Ume.Type {
-		Ume.self
+	open var ume: Ume {
+		Ume(userDefaults: self)
 	}
 }

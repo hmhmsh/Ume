@@ -20,7 +20,7 @@ class ViewController: UIViewController {
 
 		self.setCustomKey()
 		let key = self.getCustomKey()
-		print(key)
+		print(key ?? 0)
 	}
 }
 
@@ -28,11 +28,11 @@ class ViewController: UIViewController {
 
 extension ViewController {
 	func setUsername() {
-		UserDefaults.ume.set("shunkun", forKey: UserDefaultsKeys.username)
+		UserDefaults.standard.ume.set("shunkun", forKey: UserDefaultsKeys.username)
 	}
 
 	func getUsername() -> String? {
-		return UserDefaults.ume.string(forKey: UserDefaultsKeys.username)
+		return UserDefaults.standard.ume.string(forKey: UserDefaultsKeys.username)
 	}
 }
 
@@ -40,10 +40,10 @@ extension ViewController {
 
 extension ViewController {
 	func setCustomKey() {
-		UserDefaults.ume.set(22, forKey: UserDefaultsKeys.customKey)
+		UserDefaults(suiteName: "your suite name")?.ume.set(22, forKey: UserDefaultsKeys.customKey)
 	}
 
-	func getCustomKey() -> Int {
-		return UserDefaults.ume.integer(forKey: UserDefaultsKeys.customKey)
+	func getCustomKey() -> Int? {
+		return UserDefaults(suiteName: "your suite name")?.ume.integer(forKey: UserDefaultsKeys.customKey)
 	}
 }
