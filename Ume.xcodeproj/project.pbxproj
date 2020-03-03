@@ -11,6 +11,7 @@
 		4DE14648240D0DEF000202F0 /* UmeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE14647240D0DEF000202F0 /* UmeTests.swift */; };
 		4DE1464A240D0DEF000202F0 /* Ume.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DE1463C240D0DEF000202F0 /* Ume.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4DE14656240DEFDF000202F0 /* Ume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE14655240DEFDF000202F0 /* Ume.swift */; };
+		4DE14659240DF21B000202F0 /* UserDefaults+Ume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE14658240DF21B000202F0 /* UserDefaults+Ume.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		4DE14647240D0DEF000202F0 /* UmeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UmeTests.swift; sourceTree = "<group>"; };
 		4DE14649240D0DEF000202F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DE14655240DEFDF000202F0 /* Ume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ume.swift; sourceTree = "<group>"; };
+		4DE14658240DF21B000202F0 /* UserDefaults+Ume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Ume.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		4DE1463B240D0DEF000202F0 /* Ume */ = {
 			isa = PBXGroup;
 			children = (
+				4DE14657240DF205000202F0 /* extension */,
 				4DE1463C240D0DEF000202F0 /* Ume.h */,
 				4DE1463D240D0DEF000202F0 /* Info.plist */,
 				4DE14655240DEFDF000202F0 /* Ume.swift */,
@@ -87,6 +90,14 @@
 				4DE14649240D0DEF000202F0 /* Info.plist */,
 			);
 			path = UmeTests;
+			sourceTree = "<group>";
+		};
+		4DE14657240DF205000202F0 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				4DE14658240DF21B000202F0 /* UserDefaults+Ume.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DE14659240DF21B000202F0 /* UserDefaults+Ume.swift in Sources */,
 				4DE14656240DEFDF000202F0 /* Ume.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
