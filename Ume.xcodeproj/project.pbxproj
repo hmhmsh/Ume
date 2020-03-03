@@ -75,10 +75,10 @@
 		4DE1463B240D0DEF000202F0 /* Ume */ = {
 			isa = PBXGroup;
 			children = (
+				4DE1465A240DF37E000202F0 /* Ume */,
 				4DE14657240DF205000202F0 /* extension */,
 				4DE1463C240D0DEF000202F0 /* Ume.h */,
 				4DE1463D240D0DEF000202F0 /* Info.plist */,
-				4DE14655240DEFDF000202F0 /* Ume.swift */,
 			);
 			path = Ume;
 			sourceTree = "<group>";
@@ -98,6 +98,14 @@
 				4DE14658240DF21B000202F0 /* UserDefaults+Ume.swift */,
 			);
 			path = extension;
+			sourceTree = "<group>";
+		};
+		4DE1465A240DF37E000202F0 /* Ume */ = {
+			isa = PBXGroup;
+			children = (
+				4DE14655240DEFDF000202F0 /* Ume.swift */,
+			);
+			path = Ume;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
