@@ -116,3 +116,12 @@ extension Ume {
 		UserDefaults.standard.set(url, forKey: defaultName.rawValue)
 	}
 }
+
+// MARK: - remove
+
+extension Ume {
+	/// -removeObjectForKey: is equivalent to -[... setObject:nil forKey:defaultName]
+	public static func removeObject<T: RawRepresentable>(forKey defaultName: T) where T.RawValue == String {
+		UserDefaults.standard.removeObject(forKey: defaultName.rawValue)
+	}
+}
