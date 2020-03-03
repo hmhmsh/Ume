@@ -18,6 +18,8 @@
 		4DE1468C240DF5C8000202F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE1468A240DF5C8000202F0 /* Main.storyboard */; };
 		4DE1468E240DF5CA000202F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DE1468D240DF5CA000202F0 /* Assets.xcassets */; };
 		4DE14691240DF5CA000202F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE1468F240DF5CA000202F0 /* LaunchScreen.storyboard */; };
+		4DE14697240DF625000202F0 /* Ume.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE14639240D0DEF000202F0 /* Ume.framework */; };
+		4DE14698240DF625000202F0 /* Ume.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE14639240D0DEF000202F0 /* Ume.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +30,28 @@
 			remoteGlobalIDString = 4DE14638240D0DEF000202F0;
 			remoteInfo = Ume;
 		};
+		4DE14699240DF625000202F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DE14630240D0DEF000202F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DE14638240D0DEF000202F0;
+			remoteInfo = Ume;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4DE1469B240DF625000202F0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4DE14698240DF625000202F0 /* Ume.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4DE14639240D0DEF000202F0 /* Ume.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ume.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DE14697240DF625000202F0 /* Ume.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +106,7 @@
 				4DE14683240DF5C8000202F0 /* UmeExample */,
 				4DE14646240D0DEF000202F0 /* UmeTests */,
 				4DE1463A240D0DEF000202F0 /* Products */,
+				4DE14696240DF625000202F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +170,13 @@
 			path = UmeExample;
 			sourceTree = "<group>";
 		};
+		4DE14696240DF625000202F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -202,10 +234,12 @@
 				4DE1467E240DF5C8000202F0 /* Sources */,
 				4DE1467F240DF5C8000202F0 /* Frameworks */,
 				4DE14680240DF5C8000202F0 /* Resources */,
+				4DE1469B240DF625000202F0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4DE1469A240DF625000202F0 /* PBXTargetDependency */,
 			);
 			name = UmeExample;
 			productName = UmeExample;
@@ -316,6 +350,11 @@
 			isa = PBXTargetDependency;
 			target = 4DE14638240D0DEF000202F0 /* Ume */;
 			targetProxy = 4DE14644240D0DEF000202F0 /* PBXContainerItemProxy */;
+		};
+		4DE1469A240DF625000202F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DE14638240D0DEF000202F0 /* Ume */;
+			targetProxy = 4DE14699240DF625000202F0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
