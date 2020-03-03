@@ -20,6 +20,7 @@
 		4DE14691240DF5CA000202F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE1468F240DF5CA000202F0 /* LaunchScreen.storyboard */; };
 		4DE14697240DF625000202F0 /* Ume.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE14639240D0DEF000202F0 /* Ume.framework */; };
 		4DE14698240DF625000202F0 /* Ume.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE14639240D0DEF000202F0 /* Ume.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4DE1469E240DF766000202F0 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE1469D240DF766000202F0 /* UserDefaultsKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		4DE1468D240DF5CA000202F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DE14690240DF5CA000202F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DE14692240DF5CA000202F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DE1469D240DF766000202F0 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 		4DE14683240DF5C8000202F0 /* UmeExample */ = {
 			isa = PBXGroup;
 			children = (
+				4DE1469C240DF744000202F0 /* UserDefaultsKeys */,
 				4DE14684240DF5C8000202F0 /* AppDelegate.swift */,
 				4DE14686240DF5C8000202F0 /* SceneDelegate.swift */,
 				4DE14688240DF5C8000202F0 /* ViewController.swift */,
@@ -175,6 +178,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DE1469C240DF744000202F0 /* UserDefaultsKeys */ = {
+			isa = PBXGroup;
+			children = (
+				4DE1469D240DF766000202F0 /* UserDefaultsKeys.swift */,
+			);
+			path = UserDefaultsKeys;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,6 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DE1469E240DF766000202F0 /* UserDefaultsKeys.swift in Sources */,
 				4DE14689240DF5C8000202F0 /* ViewController.swift in Sources */,
 				4DE14685240DF5C8000202F0 /* AppDelegate.swift in Sources */,
 				4DE14687240DF5C8000202F0 /* SceneDelegate.swift in Sources */,
