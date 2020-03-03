@@ -12,6 +12,12 @@
 		4DE1464A240D0DEF000202F0 /* Ume.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DE1463C240D0DEF000202F0 /* Ume.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4DE14656240DEFDF000202F0 /* Ume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE14655240DEFDF000202F0 /* Ume.swift */; };
 		4DE14659240DF21B000202F0 /* UserDefaults+Ume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE14658240DF21B000202F0 /* UserDefaults+Ume.swift */; };
+		4DE14685240DF5C8000202F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE14684240DF5C8000202F0 /* AppDelegate.swift */; };
+		4DE14687240DF5C8000202F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE14686240DF5C8000202F0 /* SceneDelegate.swift */; };
+		4DE14689240DF5C8000202F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE14688240DF5C8000202F0 /* ViewController.swift */; };
+		4DE1468C240DF5C8000202F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE1468A240DF5C8000202F0 /* Main.storyboard */; };
+		4DE1468E240DF5CA000202F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DE1468D240DF5CA000202F0 /* Assets.xcassets */; };
+		4DE14691240DF5CA000202F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE1468F240DF5CA000202F0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +39,14 @@
 		4DE14649240D0DEF000202F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DE14655240DEFDF000202F0 /* Ume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ume.swift; sourceTree = "<group>"; };
 		4DE14658240DF21B000202F0 /* UserDefaults+Ume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Ume.swift"; sourceTree = "<group>"; };
+		4DE14682240DF5C8000202F0 /* UmeExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UmeExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DE14684240DF5C8000202F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4DE14686240DF5C8000202F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4DE14688240DF5C8000202F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4DE1468B240DF5C8000202F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4DE1468D240DF5CA000202F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DE14690240DF5CA000202F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4DE14692240DF5CA000202F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4DE1467F240DF5C8000202F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -58,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				4DE1463B240D0DEF000202F0 /* Ume */,
+				4DE14683240DF5C8000202F0 /* UmeExample */,
 				4DE14646240D0DEF000202F0 /* UmeTests */,
 				4DE1463A240D0DEF000202F0 /* Products */,
 			);
@@ -68,6 +90,7 @@
 			children = (
 				4DE14639240D0DEF000202F0 /* Ume.framework */,
 				4DE14642240D0DEF000202F0 /* UmeTests.xctest */,
+				4DE14682240DF5C8000202F0 /* UmeExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,6 +129,20 @@
 				4DE14655240DEFDF000202F0 /* Ume.swift */,
 			);
 			path = Ume;
+			sourceTree = "<group>";
+		};
+		4DE14683240DF5C8000202F0 /* UmeExample */ = {
+			isa = PBXGroup;
+			children = (
+				4DE14684240DF5C8000202F0 /* AppDelegate.swift */,
+				4DE14686240DF5C8000202F0 /* SceneDelegate.swift */,
+				4DE14688240DF5C8000202F0 /* ViewController.swift */,
+				4DE1468A240DF5C8000202F0 /* Main.storyboard */,
+				4DE1468D240DF5CA000202F0 /* Assets.xcassets */,
+				4DE1468F240DF5CA000202F0 /* LaunchScreen.storyboard */,
+				4DE14692240DF5CA000202F0 /* Info.plist */,
+			);
+			path = UmeExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +195,23 @@
 			productReference = 4DE14642240D0DEF000202F0 /* UmeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		4DE14681240DF5C8000202F0 /* UmeExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DE14695240DF5CA000202F0 /* Build configuration list for PBXNativeTarget "UmeExample" */;
+			buildPhases = (
+				4DE1467E240DF5C8000202F0 /* Sources */,
+				4DE1467F240DF5C8000202F0 /* Frameworks */,
+				4DE14680240DF5C8000202F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UmeExample;
+			productName = UmeExample;
+			productReference = 4DE14682240DF5C8000202F0 /* UmeExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -173,6 +227,9 @@
 						LastSwiftMigration = 1130;
 					};
 					4DE14641240D0DEF000202F0 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					4DE14681240DF5C8000202F0 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
@@ -192,6 +249,7 @@
 			targets = (
 				4DE14638240D0DEF000202F0 /* Ume */,
 				4DE14641240D0DEF000202F0 /* UmeTests */,
+				4DE14681240DF5C8000202F0 /* UmeExample */,
 			);
 		};
 /* End PBXProject section */
@@ -208,6 +266,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DE14680240DF5C8000202F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE14691240DF5CA000202F0 /* LaunchScreen.storyboard in Resources */,
+				4DE1468E240DF5CA000202F0 /* Assets.xcassets in Resources */,
+				4DE1468C240DF5C8000202F0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +299,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4DE1467E240DF5C8000202F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE14689240DF5C8000202F0 /* ViewController.swift in Sources */,
+				4DE14685240DF5C8000202F0 /* AppDelegate.swift in Sources */,
+				4DE14687240DF5C8000202F0 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -240,6 +318,25 @@
 			targetProxy = 4DE14644240D0DEF000202F0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4DE1468A240DF5C8000202F0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DE1468B240DF5C8000202F0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4DE1468F240DF5CA000202F0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DE14690240DF5CA000202F0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4DE1464B240D0DEF000202F0 /* Debug */ = {
@@ -447,6 +544,40 @@
 			};
 			name = Release;
 		};
+		4DE14693240DF5CA000202F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UmeExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shunkun.UmeExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4DE14694240DF5CA000202F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UmeExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shunkun.UmeExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -473,6 +604,15 @@
 			buildConfigurations = (
 				4DE14651240D0DEF000202F0 /* Debug */,
 				4DE14652240D0DEF000202F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DE14695240DF5CA000202F0 /* Build configuration list for PBXNativeTarget "UmeExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DE14693240DF5CA000202F0 /* Debug */,
+				4DE14694240DF5CA000202F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
