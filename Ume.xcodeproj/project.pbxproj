@@ -10,6 +10,7 @@
 		4DE14643240D0DEF000202F0 /* Ume.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE14639240D0DEF000202F0 /* Ume.framework */; };
 		4DE14648240D0DEF000202F0 /* UmeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE14647240D0DEF000202F0 /* UmeTests.swift */; };
 		4DE1464A240D0DEF000202F0 /* Ume.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DE1463C240D0DEF000202F0 /* Ume.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DE14656240DEFDF000202F0 /* Ume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE14655240DEFDF000202F0 /* Ume.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		4DE14642240D0DEF000202F0 /* UmeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UmeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE14647240D0DEF000202F0 /* UmeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UmeTests.swift; sourceTree = "<group>"; };
 		4DE14649240D0DEF000202F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DE14655240DEFDF000202F0 /* Ume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ume.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				4DE1463C240D0DEF000202F0 /* Ume.h */,
 				4DE1463D240D0DEF000202F0 /* Info.plist */,
+				4DE14655240DEFDF000202F0 /* Ume.swift */,
 			);
 			path = Ume;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DE14656240DEFDF000202F0 /* Ume.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +394,7 @@
 		4DE14651240D0DEF000202F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UmeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -407,6 +412,7 @@
 		4DE14652240D0DEF000202F0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UmeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
