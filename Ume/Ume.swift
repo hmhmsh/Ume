@@ -16,8 +16,8 @@ public struct Ume {
 
 extension Ume {
 	/**
-	-objectForKey: will search the receiver's search list for a default with the key 'defaultName' and return it. If another process has changed defaults in the search list, NSUserDefaults will automatically update to the latest values. If the key in question has been marked as ubiquitous via a Defaults Configuration File, the latest value may not be immediately available, and the registered value will be returned instead.
-	*/
+	 -objectForKey: will search the receiver's search list for a default with the key 'defaultName' and return it. If another process has changed defaults in the search list, NSUserDefaults will automatically update to the latest values. If the key in question has been marked as ubiquitous via a Defaults Configuration File, the latest value may not be immediately available, and the registered value will be returned instead.
+	 */
 	public static func object<T: RawRepresentable>(forKey defaultName: T) -> Any? where T.RawValue == String {
 		UserDefaults.standard.object(forKey: defaultName.rawValue)
 	}
@@ -48,8 +48,8 @@ extension Ume {
 	}
 	
 	/**
-	-integerForKey: is equivalent to -objectForKey:, except that it converts the returned value to an NSInteger. If the value is an NSNumber, the result of -integerValue will be returned. If the value is an NSString, it will be converted to NSInteger if possible. If the value is a boolean, it will be converted to either 1 for YES or 0 for NO. If the value is absent or can't be converted to an integer, 0 will be returned.
-	*/
+	 -integerForKey: is equivalent to -objectForKey:, except that it converts the returned value to an NSInteger. If the value is an NSNumber, the result of -integerValue will be returned. If the value is an NSString, it will be converted to NSInteger if possible. If the value is a boolean, it will be converted to either 1 for YES or 0 for NO. If the value is absent or can't be converted to an integer, 0 will be returned.
+	 */
 	public static func integer<T: RawRepresentable>(forKey defaultName: T) -> Int where T.RawValue == String {
 		UserDefaults.standard.integer(forKey: defaultName.rawValue)
 	}
@@ -65,15 +65,15 @@ extension Ume {
 	}
 	
 	/**
-	-boolForKey: is equivalent to -objectForKey:, except that it converts the returned value to a BOOL. If the value is an NSNumber, NO will be returned if the value is 0, YES otherwise. If the value is an NSString, values of "YES" or "1" will return YES, and values of "NO", "0", or any other string will return NO. If the value is absent or can't be converted to a BOOL, NO will be returned.
-	*/
+	 -boolForKey: is equivalent to -objectForKey:, except that it converts the returned value to a BOOL. If the value is an NSNumber, NO will be returned if the value is 0, YES otherwise. If the value is an NSString, values of "YES" or "1" will return YES, and values of "NO", "0", or any other string will return NO. If the value is absent or can't be converted to a BOOL, NO will be returned.
+	 */
 	public static func bool<T: RawRepresentable>(forKey defaultName: T) -> Bool where T.RawValue == String {
 		UserDefaults.standard.bool(forKey: defaultName.rawValue)
 	}
 	
 	/**
-	-URLForKey: is equivalent to -objectForKey: except that it converts the returned value to an NSURL. If the value is an NSString path, then it will construct a file URL to that path. If the value is an archived URL from -setURL:forKey: it will be unarchived. If the value is absent or can't be converted to an NSURL, nil will be returned.
-	*/
+	 -URLForKey: is equivalent to -objectForKey: except that it converts the returned value to an NSURL. If the value is an NSString path, then it will construct a file URL to that path. If the value is an archived URL from -setURL:forKey: it will be unarchived. If the value is absent or can't be converted to an NSURL, nil will be returned.
+	 */
 	@available(iOS 4.0, *)
 	public static func url<T: RawRepresentable>(forKey defaultName: T) -> URL? where T.RawValue == String {
 		UserDefaults.standard.url(forKey: defaultName.rawValue)
@@ -84,8 +84,8 @@ extension Ume {
 
 extension Ume {
 	/**
-	-setObject:forKey: immediately stores a value (or removes the value if nil is passed as the value) for the provided key in the search list entry for the receiver's suite name in the current user and any host, then asynchronously stores the value persistently, where it is made available to other processes.
-	*/
+	 -setObject:forKey: immediately stores a value (or removes the value if nil is passed as the value) for the provided key in the search list entry for the receiver's suite name in the current user and any host, then asynchronously stores the value persistently, where it is made available to other processes.
+	 */
 	public static func set<T: RawRepresentable>(_ value: Any?, forKey defaultName: T) where T.RawValue == String {
 		UserDefaults.standard.set(value, forKey: defaultName.rawValue)
 	}
